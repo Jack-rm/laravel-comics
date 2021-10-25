@@ -141,6 +141,7 @@ header .header-major li a.active {
 
 #my_features-section .my_features ul li a {
   text-decoration: none;
+  text-transform: uppercase;
   color: white;
   display: flex;
   align-items: center;
