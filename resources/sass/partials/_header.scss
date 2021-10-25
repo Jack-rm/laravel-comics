@@ -39,10 +39,10 @@ header {
           border-bottom: 6px solid transparent;
       
           &:hover{
-          border-bottom: 4px solid $borderBottomActiveColor;
+          border-bottom: 6px solid $borderBottomActiveColor;
           }
           &.active{
-          border-bottom: 4px solid $borderBottomActiveColor;
+          border-bottom: 6px solid $borderBottomActiveColor;
           }
         }
       

@@ -5,6 +5,47 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+#comics {
+  text-align: center;
+}
+
+#comics .my_content {
+  padding: 0px 450px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#comics .my_btn-light {
+  color: white;
+  background-color: #3580f6;
+  border: 2px solid #212121;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  margin: 20px 0px;
+}
+
+#comics .my_btn-light:hover {
+  background-color: #333333;
+}
+
+#comics .my_comic-element {
+  flex-basis: 16.6666666667%;
+  padding-top: 50px;
+  text-align: left;
+}
+
+#comics .my_comic-element h3 {
+  color: white;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+#comics .my_comic-img {
+  height: 200px;
+  overflow: hidden;
+}
+
 header .header-banner {
   background-color: #3580f6;
   padding: 3px 250px 3px 250px;
@@ -45,11 +86,11 @@ header .header-major ul li {
 }
 
 header .header-major ul li:hover {
-  border-bottom: 4px solid #3580f6;
+  border-bottom: 6px solid #3580f6;
 }
 
 header .header-major ul li.active {
-  border-bottom: 4px solid #3580f6;
+  border-bottom: 6px solid #3580f6;
 }
 
 header .header-major li a {
