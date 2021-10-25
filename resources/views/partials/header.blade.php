@@ -10,9 +10,14 @@
         <nav>
             <ul>
                 @foreach ($header_links as $link)
-                    <li><a href="{{ $link['route'] }}">{{ $link['text'] }}</a></li>
+                    <li class="{{ request()->routeIs($link['route']) ? 'active' : '' }}">
+                        <a class="{{ request()->routeIs($link['route']) ? 'active' : '' }}" href="{{ $link['route'] }}">{{ $link['text'] }}</a>
+                    </li>
                 @endforeach
             </ul>
         </nav>
+        <div>
+            <h4>Search Bar</h4>
+        </div>
     </div>
 </header>
