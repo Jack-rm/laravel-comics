@@ -16,6 +16,7 @@
     <main>
         @include('partials.jumbotron')
         @yield('content')
+        @include('partials.features', ['features_links' => config('features_items')])
     </main>
 
     @include('partials.footer', ['header_links' => config('header_nav_items')])

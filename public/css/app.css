@@ -122,6 +122,35 @@ header .header-major li a.active {
   text-transform: uppercase;
 }
 
+#my_features-section {
+  background-color: #3580f6;
+  padding: 50px 0px;
+}
+
+#my_features-section .my_features {
+  margin: 0px 250px;
+  color: white;
+}
+
+#my_features-section .my_features ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#my_features-section .my_features ul li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#my_features-section .my_features ul li a img {
+  height: 45px;
+  margin-right: 20px;
+}
+
 Footer .my_footer-start {
   background-image: url("/images/footer-bg.jpg");
   background-size: cover;
