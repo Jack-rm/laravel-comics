@@ -18,7 +18,7 @@
         @yield('content')
     </main>
 
-    @include('partials.footer')
+    @include('partials.footer', ['header_links' => config('header_nav_items')])
 
 
     @yield('script-adder')    
