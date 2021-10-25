@@ -14,6 +14,7 @@
     @include('partials.header', ['header_links' => config('header_nav_items')])
 
     <main>
+        @include('partials.jumbotron')
         @yield('content')
     </main>
 

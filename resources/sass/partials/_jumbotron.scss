@@ -1,0 +1,19 @@
+#my_jumbotron{
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  background-image: url("/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my_title-marker{
+  position: absolute;
+  bottom: -20px;
+  left: 430px;
+  background-color: $borderBottomActiveColor;
+  padding: 5px 20px;
+  color: white;
+  text-transform: uppercase;
+
+}

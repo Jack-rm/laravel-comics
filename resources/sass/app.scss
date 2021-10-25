@@ -2,5 +2,9 @@
 @import "partials/generics";
 @import "partials/content";
 @import "partials/header";
+@import "partials/jumbotron";
 @import "partials/footer";
 
+main {
+    background-color: $darkerGrey;
+}
