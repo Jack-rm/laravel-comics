@@ -1,11 +1,8 @@
 @import "partials/variables";
 @import "partials/generics";
 @import "partials/content";
+@import "partials/comic";
 @import "partials/header";
 @import "partials/jumbotron";
 @import "partials/features";
 @import "partials/footer";
-
-main {
-    background-color: $darkerGrey;
-}

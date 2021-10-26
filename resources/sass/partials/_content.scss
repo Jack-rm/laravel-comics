@@ -1,6 +1,8 @@
 #comics{
 
     text-align: center;
+    position: relative;
+    background-color: $darkerGrey;
     
     .my_content{
         padding: 0px 450px;
@@ -37,5 +39,16 @@
     .my_comic-img{
         height: 200px;
         overflow: hidden;
+    }
+
+    .my_title-marker{
+      position: absolute;
+      top: -20px;
+      left: 430px;
+      z-index: 3;
+      background-color: $borderBottomActiveColor;
+      padding: 5px 20px;
+      color: white;
+      text-transform: uppercase;
     }
 }

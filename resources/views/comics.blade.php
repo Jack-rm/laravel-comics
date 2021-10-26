@@ -5,15 +5,20 @@
 @section('content')
 <div id="comics">
 
+    <div class="my_title-marker">
+        <h2>Current Series</h2>
+    </div>
     <div class="my_content">
 
         @foreach ($comics as $comic)
         
         <div class="my_comic-element">
-            <div class="my_comic-img">
-                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
-            </div>
-            <h3>{{ $comic['title'] }}</h3>
+            <a href="#">
+                <div class="my_comic-img">
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                </div>
+                <h3>{{ $comic['title'] }}</h3>
+            </a>
         </div>
 
         @endforeach
