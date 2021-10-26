@@ -17,7 +17,7 @@
         height: 250px;
         width: 155px;
         position: absolute;
-        top: -55%;
+        top: -26%;
         left: 430px;
         z-index: 3;
         background-repeat: no-repeat;
@@ -36,12 +36,17 @@
     }
 
     .comic-box{
-        padding: 0px 550px 70px 500px;
+        padding: 0px 650px 70px 450px;
         display: flex;
         justify-content: space-between;
 
         .comic-details{
             padding-right: 20px;
+
+            h2{
+                text-transform: uppercase;
+                color: rgb(56, 56, 105);
+            }
         }
 
         .comic-shop{
@@ -51,14 +56,29 @@
             margin: 20px 0px 10px 0px;
 
             .comic-price{
-                width: 70%;
-                padding: 15px;
                 display: flex;
                 justify-content: space-between;
+                flex-grow: 1;
+                padding: 15px;
+                border-bottom: 1px solid rgb(56, 56, 105);
+                
+                h5,p{
+                    color: rgb(174, 228, 174);
+                }
+
+                span{
+                    color: white;
+                }
             }
 
             .comic-check{
                 padding: 15px;
+                border-left: 1px solid rgb(56, 56, 105);
+                border-bottom: 1px solid rgb(56, 56, 105);
+
+                p{
+                    color: white;
+                }
             }
         }
 
@@ -68,14 +88,15 @@
     }
 
     .comic-info{
-        
+        padding: 0px 450px 70px 450px;
         background-color: rgb(235, 235, 235);
 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
 
-        h3{
+        h2,h5{
             padding-bottom: 40px;
+            color: rgb(56, 56, 105);
         }
 
         .comic-talent{
@@ -84,38 +105,73 @@
             .comic-artist{
                 display: flex;
                 justify-content: space-between;
+                padding: 20px 0px 10px 0px;
+                border-top: 1px solid rgb(206, 205, 205);
+                border-bottom: 1px solid rgb(206, 205, 205);
 
-                h5{
-                    padding-right: 300px;
+                .artists{
+                    width: 60%;
+                    
+                    a{
+                        color: $borderBottomActiveColor;
+                        text-decoration: none;
+                    }
                 }
             }
 
             .comic-writers{
                 display: flex;
                 justify-content: space-between;
+                padding: 10px 0px 20px 0px;
+                border-bottom: 1px solid rgb(206, 205, 205);
+
+                .writers{
+                    width: 60%;
+
+                    a{
+                        color: $borderBottomActiveColor;
+                        text-decoration: none;
+                    }
+                }
             }
         }
         
         .comic-specs{
             padding: 20px;
+            width: 600px;
         
             .comic-series{
                 display: flex;
                 justify-content: space-between;
+                padding: 20px 0px 10px 0px;
 
-                h5{
-                    padding-right: 300px;
+                border-top: 1px solid rgb(206, 205, 205);
+                border-bottom: 1px solid rgb(206, 205, 205);
+
+                h4{
+                    padding-right: 50px;
                 }
+
+                span {
+                    text-transform: uppercase;
+                    color: $borderBottomActiveColor;
+                }
+
+
             }
 
             .comic-value{
                 display: flex;
                 justify-content: space-between;
+                padding: 10px 0px 20px 0px;
+                border-bottom: 1px solid rgb(206, 205, 205);
             }
             
             .comic-release{
                 display: flex;
                 justify-content: space-between;
+                padding: 20px 0px 10px 0px;
+                border-bottom: 1px solid rgb(206, 205, 205);
             }
         }
 

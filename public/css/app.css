@@ -69,7 +69,7 @@
   height: 250px;
   width: 155px;
   position: absolute;
-  top: -55%;
+  top: -26%;
   left: 430px;
   z-index: 3;
   background-repeat: no-repeat;
@@ -85,12 +85,16 @@
   width: 55%;
 }
 #comic .comic-box {
-  padding: 0px 550px 70px 500px;
+  padding: 0px 650px 70px 450px;
   display: flex;
   justify-content: space-between;
 }
 #comic .comic-box .comic-details {
   padding-right: 20px;
+}
+#comic .comic-box .comic-details h2 {
+  text-transform: uppercase;
+  color: #383869;
 }
 #comic .comic-box .comic-shop {
   background-color: #70ce70;
@@ -99,24 +103,38 @@
   margin: 20px 0px 10px 0px;
 }
 #comic .comic-box .comic-shop .comic-price {
-  width: 70%;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
+  padding: 15px;
+  border-bottom: 1px solid #383869;
+}
+#comic .comic-box .comic-shop .comic-price h5, #comic .comic-box .comic-shop .comic-price p {
+  color: #aee4ae;
+}
+#comic .comic-box .comic-shop .comic-price span {
+  color: white;
 }
 #comic .comic-box .comic-shop .comic-check {
   padding: 15px;
+  border-left: 1px solid #383869;
+  border-bottom: 1px solid #383869;
+}
+#comic .comic-box .comic-shop .comic-check p {
+  color: white;
 }
 #comic .comic-box .advertisement {
   text-align: right;
 }
 #comic .comic-info {
+  padding: 0px 450px 70px 450px;
   background-color: #ebebeb;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-#comic .comic-info h3 {
+#comic .comic-info h2, #comic .comic-info h5 {
   padding-bottom: 40px;
+  color: #383869;
 }
 #comic .comic-info .comic-talent {
   padding: 20px;
@@ -124,31 +142,59 @@
 #comic .comic-info .comic-talent .comic-artist {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0px 10px 0px;
+  border-top: 1px solid #cecdcd;
+  border-bottom: 1px solid #cecdcd;
 }
-#comic .comic-info .comic-talent .comic-artist h5 {
-  padding-right: 300px;
+#comic .comic-info .comic-talent .comic-artist .artists {
+  width: 60%;
+}
+#comic .comic-info .comic-talent .comic-artist .artists a {
+  color: #3580f6;
+  text-decoration: none;
 }
 #comic .comic-info .comic-talent .comic-writers {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid #cecdcd;
+}
+#comic .comic-info .comic-talent .comic-writers .writers {
+  width: 60%;
+}
+#comic .comic-info .comic-talent .comic-writers .writers a {
+  color: #3580f6;
+  text-decoration: none;
 }
 #comic .comic-info .comic-specs {
   padding: 20px;
+  width: 600px;
 }
 #comic .comic-info .comic-specs .comic-series {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0px 10px 0px;
+  border-top: 1px solid #cecdcd;
+  border-bottom: 1px solid #cecdcd;
 }
-#comic .comic-info .comic-specs .comic-series h5 {
-  padding-right: 300px;
+#comic .comic-info .comic-specs .comic-series h4 {
+  padding-right: 50px;
+}
+#comic .comic-info .comic-specs .comic-series span {
+  text-transform: uppercase;
+  color: #3580f6;
 }
 #comic .comic-info .comic-specs .comic-value {
   display: flex;
   justify-content: space-between;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid #cecdcd;
 }
 #comic .comic-info .comic-specs .comic-release {
   display: flex;
   justify-content: space-between;
+  padding: 20px 0px 10px 0px;
+  border-bottom: 1px solid #cecdcd;
 }
 
 header .header-banner {
