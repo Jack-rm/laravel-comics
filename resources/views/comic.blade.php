@@ -8,10 +8,10 @@
     <div class="blue-section">
     </div>      
     <div class="current-cover" 
-        style="background-image: url('https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX')">
+        style="background-image: url('{{ $comic['thumb'] }}')">
         
         <div class="cover-text cover-type">
-            <h5>Comic Book</h5>
+            <h5>{{ $comic['type']}}</h5>
         </div>
         <div class="cover-text">
             <h5>View Gallery</h5>
@@ -20,17 +20,17 @@
 
     <div class="comic-box">
         <div class="comic-details">
-            <h2> Titolo fumetto </h2>
+            <h2>{{ $comic['title'] }}</h2>
             <div class="comic-shop">
                 <div class="comic-price">
-                    <p>US prezzo comic</p>
+                    <h5>U.S. Price: <span>{{ $comic['price'] }}</span></h5>
                     <p>Available</p>
                 </div>
                 <div class="comic-check">
                     <p>Check Availability <</p>
                 </div>
             </div>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, ea impedit. Enim voluptatum, sapiente minima eveniet nostrum accusamus quam nam? Reprehenderit culpa, doloremque sequi consequatur officiis voluptatum molestias unde quas.</p>
+            <p>{{ $comic['description'] }}</p>
         </div>
         <div class="advertisement">
             <h5>ADVERTISEMENT</h5>
@@ -42,26 +42,30 @@
             <h3>Talent</h3>
             <div class="comic-artist">
                 <h5>Art by:</h5>
-                <span>artisti vari</span>
+                @foreach ($comic['artists'] as $artist)
+                    <span>{{ $artist }},</span>
+                @endforeach
             </div>
             <div class="comic-writers">
                 <h5>Written by:</h5>
-                <span>scrittori vari</span>
+                @foreach ($comic['writers'] as $writer)
+                    <span>{{ $writer }}</span>
+                @endforeach
             </div>
         </div>
         <div class="comic-specs">
             <h3>Specs</h3>
             <div class="comic-series">
                 <h5>Series:</h5>
-                <span>Action Comics</span>
+                <span>{{ $comic['series']}}</span>
             </div>
             <div class="comic-value">
                 <h5>U.S. Price:</h5>
-                <span>$19.99</span>
+                <span>{{ $comic['price'] }}</span>
             </div>
             <div class="comic-release">
                 <h5>On Sale Date</h5>
-                <span>Oct 02 2018</span>
+                <span>{{ $comic['sale_date'] }}</span>
             </div>
         </div>
 

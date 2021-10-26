@@ -55,6 +55,15 @@ Route::get('/', function () {
     return view('comics', ['comics' => $comics]);
 })->name('comics');
 
-Route::get('/comic', function () {
-    return view('comic');
+Route::get('/comic/{id}', function ($id) {
+
+    $comics = config('comics');
+
+    if (is_numeric($id) && ($id < count($comics) && $id >= 0)) {
+        $comic = $comics[$id];
+        return view('comic', ['comic' => $comic]);
+    } else {
+        abort('404');
+    }
+
 })->name('comic');

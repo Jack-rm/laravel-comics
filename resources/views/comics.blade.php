@@ -13,7 +13,9 @@
         @foreach ($comics as $comic)
         
         <div class="my_comic-element">
-            <a href="#">
+            <!-- <a href='{{ url("/comic/$loop->index") }}'> -->
+            <!-- <a href='{{ "/product/$loop->index" }}'> -->
+            <a href="{{ route('comic', ['id' => $loop->index]) }}">
                 <div class="my_comic-img">
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                 </div>
