@@ -17,7 +17,7 @@
         height: 250px;
         width: 155px;
         position: absolute;
-        top: -105%;
+        top: -55%;
         left: 430px;
         z-index: 3;
         background-repeat: no-repeat;
@@ -36,8 +36,88 @@
     }
 
     .comic-box{
-        padding: 0px 450px;
+        padding: 0px 550px 70px 500px;
         display: flex;
         justify-content: space-between;
+
+        .comic-details{
+            padding-right: 20px;
+        }
+
+        .comic-shop{
+            background-color: rgb(112, 206, 112);
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0px 10px 0px;
+
+            .comic-price{
+                width: 70%;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .comic-check{
+                padding: 15px;
+            }
+        }
+
+        .advertisement{
+            text-align: right;
+        }
+    }
+
+    .comic-info{
+        
+        background-color: rgb(235, 235, 235);
+
+        display: flex;
+        justify-content: center;
+
+        h3{
+            padding-bottom: 40px;
+        }
+
+        .comic-talent{
+            padding: 20px;
+
+            .comic-artist{
+                display: flex;
+                justify-content: space-between;
+
+                h5{
+                    padding-right: 300px;
+                }
+            }
+
+            .comic-writers{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+        .comic-specs{
+            padding: 20px;
+        
+            .comic-series{
+                display: flex;
+                justify-content: space-between;
+
+                h5{
+                    padding-right: 300px;
+                }
+            }
+
+            .comic-value{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .comic-release{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
     }
 }

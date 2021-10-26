@@ -69,7 +69,7 @@
   height: 250px;
   width: 155px;
   position: absolute;
-  top: -105%;
+  top: -55%;
   left: 430px;
   z-index: 3;
   background-repeat: no-repeat;
@@ -85,7 +85,68 @@
   width: 55%;
 }
 #comic .comic-box {
-  padding: 0px 450px;
+  padding: 0px 550px 70px 500px;
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-box .comic-details {
+  padding-right: 20px;
+}
+#comic .comic-box .comic-shop {
+  background-color: #70ce70;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 10px 0px;
+}
+#comic .comic-box .comic-shop .comic-price {
+  width: 70%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-box .comic-shop .comic-check {
+  padding: 15px;
+}
+#comic .comic-box .advertisement {
+  text-align: right;
+}
+#comic .comic-info {
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+}
+#comic .comic-info h3 {
+  padding-bottom: 40px;
+}
+#comic .comic-info .comic-talent {
+  padding: 20px;
+}
+#comic .comic-info .comic-talent .comic-artist {
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-info .comic-talent .comic-artist h5 {
+  padding-right: 300px;
+}
+#comic .comic-info .comic-talent .comic-writers {
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-info .comic-specs {
+  padding: 20px;
+}
+#comic .comic-info .comic-specs .comic-series {
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-info .comic-specs .comic-series h5 {
+  padding-right: 300px;
+}
+#comic .comic-info .comic-specs .comic-value {
+  display: flex;
+  justify-content: space-between;
+}
+#comic .comic-info .comic-specs .comic-release {
   display: flex;
   justify-content: space-between;
 }
