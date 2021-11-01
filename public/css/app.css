@@ -298,18 +298,27 @@ Footer .my_footer-img-box {
   background-size: 500px 500px;
   background-repeat: no-repeat;
   width: 500px;
-  height: 353px;
+  height: 430px;
 }
 Footer .my_footer-end {
   background-color: #333333;
 }
 Footer .my_footer-columns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+Footer .my_footer-disc {
+  color: gray;
+  padding-bottom: 20px;
+}
+Footer .my_footer-disc a {
+  color: #3580f6;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 Footer .my_column {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-right: 30px;
 }
 Footer .my_column ul {

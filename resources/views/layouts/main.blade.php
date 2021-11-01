@@ -19,7 +19,7 @@
         @include('partials.features', ['features_links' => config('features_items')])
     </main>
 
-    @include('partials.footer', ['header_links' => config('header_nav_items')])
+    @include('partials.footer', ['header_links' => config('header_nav_items'), 'footer_shop' => config('footer_shop_items'), 'footer_nav' => config('footer_nav_items'), 'footer_sites' => config('footer_sites_items')])
 
 
     @yield('script-adder')    

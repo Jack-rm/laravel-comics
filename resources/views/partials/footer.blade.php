@@ -1,38 +1,57 @@
 <footer>
     <div class="my_footer-start">
       <div class="my_footer-wrapper">
-        <div class="my_footer-columns">
-          <div class="my_column">
-            <h5>Dc Comics</h5>
-            <ul>
-                @foreach ($header_links as $link)
-                    <li>
-                        <a href="{{ $link['route'] }}">{{ $link['text'] }}</a>
-                    </li>
+        <div>
+          <div class="my_footer-columns">
+            <div class="my_column">
+              <h5>Dc Comics</h5>
+              <ul>
+                  @foreach ($header_links as $link)
+                      <li>
+                          <a href="{{ $link['route'] }}">{{ $link['text'] }}</a>
+                      </li>
+                  @endforeach
+              </ul>
+              <h5>Shop</h5>
+              <ul>
+                @foreach ($footer_shop as $item)  
+                  <li >
+                    <a href="#"> {{ $item['text'] }}</a>
+                  </li>
                 @endforeach
-            </ul>
-            <h5>Shop</h5>
-            <ul>
-              <li ><a href="#"> test </a></li>
-            </ul>
+              </ul>
+            </div>
+            <div class="my_column">
+              <h5>Dc</h5>
+              <ul>
+                @foreach ($footer_nav as $item)
+                <li>
+                  <a href="#"> {{ $item['text'] }} </a>
+                </li>
+                @endforeach
+              </ul>
+            </div>
+            <div class="my_column">
+              <h5>Sites</h5>
+              <ul>
+                @foreach ($footer_sites as $item)
+                <li>
+                  <a href="#"> {{ $item['text'] }} </a>
+                </li>
+                @endforeach
+              </ul>
+            </div>
           </div>
-          <div class="my_column">
-            <h5>Dc</h5>
-            <ul>
-              <li><a href="#"> test </a></li>
-            </ul>
-          </div>
-          <div class="my_column">
-            <h5>Sites</h5>
-            <ul>
-              <li><a href="#"> test </a></li>
-            </ul>
+          <div class="my_footer-disc">
+            <p>All Site Content TM and c 202 DC Enterainment, unless otherwise <a href="#">noted here</a>. All rights reserved.</p>
+            <a href="#"> Cookies Settings </a>
           </div>
         </div>
 
         <div class="my_footer-img-box">
         </div>
       </div>
+
     </div>
 
     <div class="my_footer-end">
